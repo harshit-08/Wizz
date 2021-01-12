@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/batches.css'
+import '../styles/batch.css'
 import Paragraph from './Paragraph'
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import BatchCard from './BatchCard';

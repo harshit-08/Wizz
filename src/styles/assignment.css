@@ -1,0 +1,29 @@
+.assignment__header__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.assignment__header {
+    display: flex;
+    /* justify-content: flex-start; */
+    width: 400px;
+    align-items: center;
+}
+.batches__header__title__text1{
+    font-weight: 600;
+    font-size: 20px;
+}
+.batches__header__title__text2{
+    margin-left: 10px;
+    font-size: 13px;
+    color: gray;
+}
+.assignent__view-all{
+    width: 400px;
+   display: flex;
+   justify-content: flex-end;
+   font-size: 15px;
+   /* margin-bottom: 200px; */
+   color: gray;
+   margin-bottom: 30px;
+   cursor: pointer;
+}

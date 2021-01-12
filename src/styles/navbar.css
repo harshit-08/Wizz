@@ -11,6 +11,9 @@
     padding: 10px;
 
 }
+.navber__menu__wrapper{
+    cursor: pointer;
+}
 .navbar__greeting {
     padding: 10px;
     padding-bottom: 15px;
@@ -22,9 +25,12 @@
 .navbar__avatar{
     margin-left: 130px;
     margin-bottom: 10px;
+    cursor: pointer
    
 }
+
 .navber__menu__wrapper .MuiSvgIcon-root{
 font-size: 3rem;
 color: #6199d8;
+;
 }

@@ -50,11 +50,10 @@ function App() {
 
   return (
 
-    // isLoggedIn ?
-
-    <Dashboard logout={logout} />
-    // :
-    // <Login loginHandler={loginHandler} />
+    isLoggedIn ?
+      <Dashboard logout={logout} />
+      :
+      <Login loginHandler={loginHandler} />
 
   );
 }

@@ -23,12 +23,17 @@
     display: flex;
     align-items: center;
     /* margin-left: 155px; */
+    
+    
 }
-.batches__header__createbatch .MuiSvgIcon-root{
+.batches__header__createbatch .MuiSvgIcon-root {
     font-size: 2.5rem;
     /* width: 2rem; */
     color: #519ce9;
+    cursor: pointer;
 }
+
+
 .batches__header__title{}
 .batch-card{
     display: flex;
@@ -46,5 +51,6 @@
    font-size: 15px;
    /* margin-bottom: 200px; */
    color: gray;
+   cursor: pointer;
     
 }

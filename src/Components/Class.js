@@ -1,6 +1,6 @@
 import React from 'react'
 import Paragraph from './Paragraph'
-import '../styles/classes.css'
+import '../styles/class.css'
 
 function Classes() {
     return (

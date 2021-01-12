@@ -1,9 +1,12 @@
+
 import React from 'react'
 import '../styles/dashboard.css'
-import Batches from './Batches'
-import Classes from './Classes'
+import Batch from './Batch'
+import Class from './Class'
 import Navbar from './Navbar'
 import Paragraph from './Paragraph'
+import Assignment from './Assignment'
+import Button from './Button'
 
 
 function Dashboard({ logout }) {
@@ -14,10 +17,15 @@ function Dashboard({ logout }) {
         <div className="dashboard">
 
             <Navbar />
-            {/* <button type="submit" onClick={logout}>logout</button> */}
             <Paragraph text="Are you ready to create Batch & Assignments ?" style="dashboard__p1" />
-            <Classes />
-            <Batches />
+            <Class />
+            <Batch />
+            <Assignment />
+            {/* <button type="submit" onClick={logout}>logout</button> */}
+            <div className="dashboard__logout__wrapper">
+                <Button text="Log Out" style="dashboard__logout" onClick={logout} />
+            </div>
+
         </div>
     )
 }

@@ -9,6 +9,7 @@
     border-radius: 20px;
     margin-top: 15px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
 }
 .batch-card__wrapper{
     display: flex;
@@ -37,6 +38,7 @@
 .batch-card__grade {
     margin-right: 20px;
     color: gray;
+    font-size: 14px;
 }
 .batch-card__days{
     display: flex;
@@ -46,9 +48,10 @@
     margin-bottom: 20px;
     /* padding-bottom: 20px; */
 }
-.batch-card__day{
+.batch-card__day {
     margin-left: 10px;
     color: gray;
+    font-size: 14px;
 }
 .batch-card__days .MuiSvgIcon-root {
     color: #539aec;
