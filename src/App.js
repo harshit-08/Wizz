@@ -1,57 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { useState, useEffect } from 'react';
 import './App.css';
+import Dashboard from './Components/Dashboard';
+
+import { auth } from './firebase'
+import firebase from 'firebase'
+
+import Login from './Components/Login'
+
+
+
 
 function App() {
+
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  useEffect(() => {
+    const state = localStorage.getItem('loginState')
+    setIsLoggedIn(JSON.parse(state))
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('loginState', JSON.stringify(isLoggedIn))
+  })
+
+  const logout = () => {
+
+    auth.signOut().then(() => {
+
+      console.log('Sign - out successful');
+      setIsLoggedIn(!isLoggedIn)
+
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
+
+  const loginHandler = () => {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider)
+      .then((result) => {
+        setIsLoggedIn(!isLoggedIn)
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Something went wrong. Please try again")
+      });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+
+    // isLoggedIn ?
+
+    <Dashboard logout={logout} />
+    // :
+    // <Login loginHandler={loginHandler} />
+
   );
 }
 

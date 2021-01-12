@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    width: -moz-fit-content;
+    /* width: fit-content; */
+    /* margin-left: 550px; */
+}
+.navbar__menu{
+    padding: 10px;
+
+}
+.navbar__greeting {
+    padding: 10px;
+    padding-bottom: 15px;
+    font-weight: 540;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 80px;
+}
+.navbar__avatar{
+    margin-left: 130px;
+    margin-bottom: 10px;
+   
+}
+.navber__menu__wrapper .MuiSvgIcon-root{
+font-size: 3rem;
+color: #6199d8;
+}
