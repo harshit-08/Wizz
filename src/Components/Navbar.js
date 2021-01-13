@@ -8,12 +8,29 @@ import Paragraph from './Paragraph';
 function Navbar() {
     return (
         <>
-            <div className="navbar">
-                <div className="navber__menu__wrapper">
-                    <MenuRoundedIcon className="navbar__menu" />
+            <div className="navbar__wrapper">
+                <div className="navbar">
+                    <div className="navber__menu__wrapper">
+                        <MenuRoundedIcon
+                            className="navbar__menu"
+                        />
+                        <Paragraph
+                            text="Hi, Martin"
+                            style="navbar__greeting"
+                        />
+                    </div>
+                    <Avatar
+                        src={profilePic}
+                        className="navbar__avatar"
+                    />
+
                 </div>
-                <Paragraph text="Hi, Martin" style="navbar__greeting" />
-                <Avatar src={profilePic} className="navbar__avatar" />
+            </div>
+            <div className="navbar__desc">
+                <Paragraph
+                    text="Are you ready to create Batch & Assignments ?"
+                    style="navbar__p1"
+                />
             </div>
         </>
     )

@@ -1,19 +1,24 @@
 .batches {
     display: flex;
     margin-top: 30px;
-    /* flex-direction: column; */
     justify-content: center;
+}
+@media all and (max-width:430px){
+    .batches__header{
+        width: 330px;
+    }
+    .batches__view-all{
+        width: 330px !important;
+    }
 }
 .batches__header {
     display: flex;
     align-items: center;
 }
 .batches__header__title__text {
-    /* padding-right: 120px; */
     margin-right: 125px;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-left: 20px;
 }
 .batches__header__createbatch__text {
     font-size: 0.9rem;
@@ -22,19 +27,13 @@
 .batches__header__createbatch {
     display: flex;
     align-items: center;
-    /* margin-left: 155px; */
-    
-    
 }
 .batches__header__createbatch .MuiSvgIcon-root {
     font-size: 2.5rem;
-    /* width: 2rem; */
     color: #519ce9;
     cursor: pointer;
 }
 
-
-.batches__header__title{}
 .batch-card{
     display: flex;
     justify-content: center;
@@ -49,8 +48,6 @@
    display: flex;
    justify-content: flex-end;
    font-size: 15px;
-   /* margin-bottom: 200px; */
    color: gray;
    cursor: pointer;
-    
 }

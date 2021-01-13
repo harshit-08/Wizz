@@ -1,17 +1,10 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 import Dashboard from './Components/Dashboard';
-
 import { auth } from './firebase'
 import firebase from 'firebase'
-
 import Login from './Components/Login'
 
-
-
-
 function App() {
-
 
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
@@ -54,7 +47,6 @@ function App() {
       <Dashboard logout={logout} />
       :
       <Login loginHandler={loginHandler} />
-
   );
 }
 

@@ -7,18 +7,39 @@ function AssignmentCard({ assignmentNo, subject, submitted, desc, dueDate, dueTi
         <div className="assignment-card__wrapper">
             <div className="assignment-card">
                 <div className="assignment-card__header">
-                    <Paragraph text={assignmentNo} style="assignment-card__header__no" />
+                    <Paragraph
+                        text={assignmentNo}
+                        style="assignment-card__header__no"
+                    />
                     <div className="assignment-card__header__submitted">
-                        <Paragraph text="Submitted:" style="assignment-card__header_submit" />
-                        <Paragraph text={submitted} style="assignment-card__header_submit__detail" />
+                        <Paragraph
+                            text="Submitted:"
+                            style="assignment-card__header_submit"
+                        />
+                        <Paragraph
+                            text={submitted}
+                            style="assignment-card__header_submit__detail"
+                        />
                     </div>
                 </div>
-                <Paragraph text={subject} style="assignment-card__subject" />
-                <Paragraph text={desc} style="assignment-card_desc" />
+                <Paragraph
+                    text={subject}
+                    style="assignment-card__subject"
+                />
+                <Paragraph
+                    text={desc}
+                    style="assignment-card_desc"
+                />
                 <div className="assignment-card__read-more">
-                    <Paragraph text="Read More" style="assignment-card__read-more-text" />
+                    <Paragraph
+                        text="Read More"
+                        style="assignment-card__read-more-text"
+                    />
                 </div>
-                <Paragraph text={date} style="assignment-card__due-date" />
+                <Paragraph
+                    text={date}
+                    style="assignment-card__due-date"
+                />
             </div>
         </div>
     )

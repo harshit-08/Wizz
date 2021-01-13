@@ -1,36 +1,49 @@
+.navbar__wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
-    width: -moz-fit-content;
-    /* width: fit-content; */
-    /* margin-left: 550px; */
+    justify-content: space-between;
+    width: 410px;
 }
-.navbar__menu{
-    padding: 10px;
-
+@media all and (max-width:430px){
+    .navbar {
+        width: 340px;
+    }
+    .navbar__p1{
+        width: 270px;
+    }
 }
 .navber__menu__wrapper{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .navbar__greeting {
-    padding: 10px;
-    padding-bottom: 15px;
     font-weight: 540;
     font-size: 1.5rem;
+    margin-left: 15px;
     font-family: 'Poppins', sans-serif;
-    padding-right: 80px;
 }
 .navbar__avatar{
-    margin-left: 130px;
-    margin-bottom: 10px;
     cursor: pointer
-   
 }
-
 .navber__menu__wrapper .MuiSvgIcon-root{
-font-size: 3rem;
-color: #6199d8;
-;
+    font-size: 3rem;
+    color: #6199d8;
+    cursor: pointer;
+}
+.navbar__desc{
+    display: flex; 
+    justify-content: center;
+    margin-top: 15px;
+}
+.navbar__p1{
+    display: flex;
+    justify-content: center;    
+    color: gray;
+    margin-right: 60px;
 }

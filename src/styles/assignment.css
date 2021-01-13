@@ -4,9 +4,16 @@
 }
 .assignment__header {
     display: flex;
-    /* justify-content: flex-start; */
     width: 400px;
     align-items: center;
+}
+@media all and (max-width:430px){
+    .assignment__header{
+        width: 330px;
+    }
+    .assignent__view-all{
+        width: 330px !important;
+    }
 }
 .batches__header__title__text1{
     font-weight: 600;
@@ -22,7 +29,6 @@
    display: flex;
    justify-content: flex-end;
    font-size: 15px;
-   /* margin-bottom: 200px; */
    color: gray;
    margin-bottom: 30px;
    cursor: pointer;

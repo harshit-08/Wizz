@@ -1,22 +1,17 @@
 .dashboard{
     background-color: #f5f9fc;
-    
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
-.dashboard__p1 {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 5px; */
-    /* margin-left: 10px; */
-    color: gray;
-    padding-top: 5px;
-    padding-right: 60px;
+@media all and (max-width:430px){
+    .dashboard{
+        width: 430px;
+    }
 }
 .dashboard__logout__wrapper{
     display: flex;
     justify-content: center;
-    /* margin-left: 800px; */
 }
 .dashboard__logout{
     height: 40px;
