@@ -3,7 +3,6 @@ import '../styles/dashboard.css'
 import Batch from './Batch'
 import Class from './Class'
 import Navbar from './Navbar'
-import Paragraph from './Paragraph'
 import Assignment from './Assignment'
 import Button from './Button'
 

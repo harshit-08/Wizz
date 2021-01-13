@@ -1,4 +1,4 @@
-.classes__heading {
+.class__heading {
     font-size: x-large;
     color: #353a44;
     font-weight: 550;
@@ -7,24 +7,24 @@
     margin-bottom: 20px;
     margin-right: 130px;
 }
-.classes {
+.class {
     width: 400px;
 }
-.classes__card {
+.class__card {
     width: 400px;
 }
 @media all and (max-width:430px){
-    .classes{
+    .class{
         width: 330px;
     }
-    .classes__card{
+    .class__card{
         width: 330px;
     }
-    .classes__heading{
+    .class__heading{
         width: 330px;
     }
 }
-.classes__p1 {
+.class__p1 {
     padding: 25px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
     height: 200px;
@@ -34,7 +34,7 @@
     background-size: cover;
     background-position: center;
 }
-.classes__wrapper {
+.class__wrapper {
     display: flex;
     justify-content: center;
 }

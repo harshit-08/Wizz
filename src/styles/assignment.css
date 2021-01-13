@@ -24,6 +24,11 @@
     font-size: 13px;
     color: gray;
 }
+.view-all-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
 .assignent__view-all{
     width: 400px;
    display: flex;

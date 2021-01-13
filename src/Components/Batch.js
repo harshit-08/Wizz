@@ -35,7 +35,12 @@ function Batches() {
                 days="Mon, Tue, Wed, Sat"
                 grade="Grade: 7th"
             />
-            <BatchCard subject="Computer" batch="Math's Batch" days="Mon, Tue" grade="Grade: 4th" />
+            <BatchCard
+                subject="Computer"
+                batch="Math's Batch"
+                days="Mon, Tue"
+                grade="Grade: 4th"
+            />
             <div className="view-all-wrapper">
                 <div className="view-all">
                     <Paragraph

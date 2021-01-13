@@ -23,7 +23,6 @@ function Navbar() {
                         src={profilePic}
                         className="navbar__avatar"
                     />
-
                 </div>
             </div>
             <div className="navbar__desc">

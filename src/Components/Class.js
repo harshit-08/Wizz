@@ -2,18 +2,18 @@ import React from 'react'
 import Paragraph from './Paragraph'
 import '../styles/class.css'
 
-function Classes() {
+function Class() {
     return (
-        <div className="classes__wrapper">
-            <div className="classes">
+        <div className="class__wrapper">
+            <div className="class">
                 <Paragraph
-                    text="Upcoming Classes"
-                    style="classes__heading"
+                    text="Upcoming class"
+                    style="class__heading"
                 />
-                <div className="classes__card">
+                <div className="class__card">
                     <Paragraph
                         text="It looks like you don't have any upcoming classes for today!"
-                        style="classes__p1"
+                        style="class__p1"
                     />
                 </div>
             </div>
@@ -21,4 +21,4 @@ function Classes() {
     )
 }
 
-export default Classes
+export default Class

@@ -20,23 +20,18 @@
     font-weight: bold;
     font-size: 1.5rem;
 }
-.batches__header__createbatch__text {
-    font-size: 0.9rem;
-    margin-left: 20px;
-}
 .batches__header__createbatch {
     display: flex;
     align-items: center;
+}
+.batches__header__createbatch__text {
+    font-size: 0.9rem;
+    margin-left: 20px;
 }
 .batches__header__createbatch .MuiSvgIcon-root {
     font-size: 2.5rem;
     color: #519ce9;
     cursor: pointer;
-}
-
-.batch-card{
-    display: flex;
-    justify-content: center;
 }
 .view-all-wrapper{
     display: flex;

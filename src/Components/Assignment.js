@@ -25,14 +25,16 @@ function Assignments() {
                 submitted="15 /20"
                 desc="Rational Numbers assignent, Very important for your next exam ..."
                 dueDate="18 Sep"
-                dueTime="2:00 PM" />
+                dueTime="2:00 PM"
+            />
             <AssignmentCard
                 assignmentNo="Assignment 2"
                 subject="Science"
                 submitted="15 /20"
                 desc="Crop Production and Mgt. Very important for your next exam ..."
                 dueDate="18 Sep"
-                dueTime="2:00 PM" />
+                dueTime="2:00 PM"
+            />
 
 
             <div className="view-all-wrapper">

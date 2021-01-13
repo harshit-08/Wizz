@@ -19,14 +19,15 @@ function App() {
 
   const logout = () => {
 
-    auth.signOut().then(() => {
+    auth.signOut()
+      .then(() => {
+        console.log('Sign - out successful');
+        setIsLoggedIn(!isLoggedIn)
 
-      console.log('Sign - out successful');
-      setIsLoggedIn(!isLoggedIn)
-
-    }).catch((error) => {
-      console.log(error);
-    });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   const loginHandler = () => {

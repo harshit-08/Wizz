@@ -3,7 +3,6 @@ import '../styles/login.css'
 import logo from '../images/wizz.PNG'
 import Paragraph from './Paragraph'
 import Button from './Button'
-// import { connect } from 'react-redux'
 
 
 function Login({ loginHandler }) {

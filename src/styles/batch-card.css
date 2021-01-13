@@ -1,3 +1,7 @@
+.batch-card__wrapper{
+    display: flex;
+    justify-content: center;
+}
 .batch-card {
     display: flex;
     flex-direction: column;
@@ -14,15 +18,6 @@
         width: 330px;
     }
 }
-.batch-card__wrapper{
-    display: flex;
-    justify-content: center;
-}
-.batch-card__batch {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 .batch-card__subject {
     width: -moz-fit-content;
     width: fit-content;
@@ -32,6 +27,11 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     color: white;
+}
+.batch-card__batch {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 .batch-card__batch-name {
     margin-left: 20px;
