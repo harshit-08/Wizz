@@ -5,6 +5,7 @@ import Paragraph from './Paragraph'
 import Button from './Button'
 
 
+
 function Login({ loginHandler }) {
 
     return (
@@ -12,7 +13,7 @@ function Login({ loginHandler }) {
             <div className="login">
                 <div className="login__wrapper">
                     <div className="login__header">
-                        <img src={logo} alt="logo" className="login__header__logo" />
+                        <img src={logo} className="login__header__logo" />
                     </div>
                     <div className="login__signIn">
                         <Paragraph
