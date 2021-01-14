@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/navbar.css'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { Avatar } from '@material-ui/core';
 import profilePic from '../images/profile.PNG'
 import Paragraph from './Paragraph';
+import { auth } from '../firebase'
 
 function Navbar() {
+
+    const [name, setName] = useState("")
+    const [profileURL, setProfileURL] = useState("")
+
+
+    auth.onAuthStateChanged(function (user) {
+        if (user) {
+            setName(user.displayName);
+            setProfileURL(user.photoURL)
+        } else {
+            setName("Guest")
+            console.log('User not found');
+        }
+    });
+    const greeting = "Hi, " + name;
+
     return (
         <>
             <div className="navbar__wrapper">
@@ -15,12 +32,12 @@ function Navbar() {
                             className="navbar__menu"
                         />
                         <Paragraph
-                            text="Hi, Martin"
+                            text={greeting}
                             style="navbar__greeting"
                         />
                     </div>
                     <Avatar
-                        src={profilePic}
+                        src={profileURL}
                         className="navbar__avatar"
                     />
                 </div>
